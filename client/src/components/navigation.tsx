@@ -39,7 +39,7 @@ export default function Navigation() {
               onClick={() => scrollToSection('work')}
               className="text-dark-charcoal hover:text-warm-gray transition-colors duration-200"
             >
-              Work
+              Projects
             </button>
             <button 
               onClick={() => scrollToSection('about')}
@@ -52,6 +52,12 @@ export default function Navigation() {
               className="text-dark-charcoal hover:text-warm-gray transition-colors duration-200"
             >
               Skills
+            </button>
+            <button 
+              onClick={() => scrollToSection('experience')}
+              className="text-dark-charcoal hover:text-warm-gray transition-colors duration-200"
+            >
+              Experience
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
