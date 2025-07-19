@@ -43,15 +43,7 @@ export default function ExperienceSection() {
             </ul>
           </div>
           
-          <div className="mb-6">
-            <h4 className="font-semibold mb-3 text-dark-charcoal">Education:</h4>
-            <div className="space-y-2">
-              <p className="text-warm-gray">
-                <strong>B.Tech, Computer Science Engineering</strong> - Mahatma Gandhi Institute of Technology (2020-2024)
-              </p>
-              <p className="text-sm text-warm-gray">CGPA: 8.0/10.0</p>
-            </div>
-          </div>
+
           
           <div className="bg-warm-beige p-4 rounded-lg">
             <p className="text-sm italic text-dark-charcoal">

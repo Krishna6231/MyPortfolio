@@ -82,7 +82,8 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <hr className="border-warm-gray/30 mb-8" />
+          <hr className="border-warm-gray/30 w-24 mx-auto mb-8" />
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-dark-charcoal">Projects</h2>
         </motion.div>
         
         <div className="space-y-12">
