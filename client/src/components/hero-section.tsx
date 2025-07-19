@@ -1,17 +1,26 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const TypewriterText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
+const TypewriterText = ({
+  text,
+  delay = 0,
+}: {
+  text: string;
+  delay?: number;
+}) => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (currentIndex < text.length) {
-        setDisplayText(text.slice(0, currentIndex + 1));
-        setCurrentIndex(currentIndex + 1);
-      }
-    }, delay + currentIndex * 50);
+    const timer = setTimeout(
+      () => {
+        if (currentIndex < text.length) {
+          setDisplayText(text.slice(0, currentIndex + 1));
+          setCurrentIndex(currentIndex + 1);
+        }
+      },
+      delay + currentIndex * 50,
+    );
 
     return () => clearTimeout(timer);
   }, [currentIndex, text, delay]);
@@ -37,6 +46,7 @@ export default function HeroSection() {
       const timeString = now.toLocaleTimeString("en-IN", {
         hour: "2-digit",
         minute: "2-digit",
+        second: "2-digit",
         hour12: true,
         timeZone: "Asia/Kolkata",
       });
@@ -49,7 +59,10 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8"
+    >
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -83,7 +96,7 @@ export default function HeroSection() {
             <span className="font-medium">TechCorp</span>
           </p>
           <div className="text-warm-gray text-xl">
-            <TypewriterText text="Java Developer and Startup Enthusiast" delay={800} />
+            <TypewriterText text="Java Developer and Startup Enthusiast" />
           </div>
         </motion.div>
       </div>
