@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { SiJavascript, SiSpringboot, SiGit, SiIntellijidea, SiCucumber, SiReact, SiMongodb, SiMysql, SiNestjs } from "react-icons/si";
-import { CheckCheck, Coffee, Code, Database, Server, Globe } from "lucide-react";
+import { SiJavascript, SiSpringboot, SiGit, SiIntellijidea, SiCucumber, SiReact, SiMongodb, SiMysql, SiNestjs, SiPython, SiAmazon, SiPostman } from "react-icons/si";
+import { CheckCheck, Coffee, Code, Database, Server, Globe, Smartphone } from "lucide-react";
 
 const skills = [
   { name: "Java", icon: Coffee, color: "text-red-600", description: "Core Language" },
@@ -19,6 +19,10 @@ const skills = [
   { name: "Microservices", icon: Server, color: "text-gray-600", description: "Architecture" },
   { name: "Multithreading", icon: Code, color: "text-purple-500", description: "Concurrency" },
   { name: "OOP", icon: Database, color: "text-teal-600", description: "Programming Paradigm" },
+  { name: "Python", icon: SiPython, color: "text-blue-500", description: "Machine Learning" },
+  { name: "React Native", icon: Smartphone, color: "text-blue-400", description: "Mobile Development" },
+  { name: "AWS", icon: SiAmazon, color: "text-orange-500", description: "Cloud Services" },
+  { name: "Postman", icon: SiPostman, color: "text-orange-600", description: "API Testing" },
 ];
 
 export default function SkillsSection() {

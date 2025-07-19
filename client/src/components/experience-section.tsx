@@ -24,40 +24,39 @@ export default function ExperienceSection() {
         >
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
             <div>
-              <h3 className="text-2xl font-bold mb-2 text-dark-charcoal">Associate Test Engineer</h3>
-              <p className="text-lg text-blue-600 font-medium">TechCorp Solutions</p>
+              <h3 className="text-2xl font-bold mb-2 text-dark-charcoal">Associate Engineer</h3>
+              <p className="text-lg text-blue-600 font-medium">Coforge</p>
+              <p className="text-sm text-warm-gray">Client: Christie's (Art Auction Platform)</p>
             </div>
             <div className="text-warm-gray font-medium">
-              <p>1+ Year Experience</p>
-              <p className="text-sm">2023 - Present</p>
+              <p>Jul 2024 - Present</p>
             </div>
           </div>
           
           <div className="mb-6">
             <h4 className="font-semibold mb-3 text-dark-charcoal">Key Responsibilities:</h4>
             <ul className="list-disc list-inside text-warm-gray space-y-2">
-              <li><strong>Automation Development:</strong> Designed and implemented automated regression and functional test cases using Java, Selenium, and Cucumber frameworks</li>
-              <li><strong>Backend Development:</strong> Contributed to internal tools development using Java and Spring Boot, gaining hands-on experience with REST API development</li>
-              <li><strong>Agile Collaboration:</strong> Worked closely with development teams in Agile environments to provide faster testing feedback and ensure quality deliverables</li>
-              <li><strong>Framework Enhancement:</strong> Continuously improved automation frameworks for better maintainability, scalability, and reporting capabilities</li>
-              <li><strong>Quality Assurance:</strong> Ensured high-quality software delivery through comprehensive testing strategies and defect tracking</li>
+              <li><strong>End-to-End Automation:</strong> Automated test cases for assigned features across five web applications in the Christie's project, improving pass rates by over 50% and up to 80% in some areas</li>
+              <li><strong>TDD Framework Development:</strong> Built a TDD-based hybrid automation framework using Selenium with Java, reducing flakiness and improving script reuse and reliability</li>
+              <li><strong>Cross-functional Collaboration:</strong> Collaborated with Developers and Business Analysts to analyze JIRA user stories, identify test scenarios, and determine cases ideal for automation</li>
+              <li><strong>Regression Testing:</strong> Achieved substantial automation coverage in regression testing, significantly reducing manual efforts during deployments and expediting release cycles</li>
             </ul>
           </div>
           
           <div className="mb-6">
-            <h4 className="font-semibold mb-3 text-dark-charcoal">Technical Achievements:</h4>
-            <ul className="list-disc list-inside text-warm-gray space-y-2">
-              <li>Reduced regression testing time by 60% through automation framework implementation</li>
-              <li>Developed reusable test components that improved team productivity</li>
-              <li>Successfully integrated CI/CD pipelines with automated testing workflows</li>
-              <li>Mentored junior team members on automation best practices and Java programming</li>
-            </ul>
+            <h4 className="font-semibold mb-3 text-dark-charcoal">Education:</h4>
+            <div className="space-y-2">
+              <p className="text-warm-gray">
+                <strong>B.Tech, Computer Science Engineering</strong> - Mahatma Gandhi Institute of Technology (2020-2024)
+              </p>
+              <p className="text-sm text-warm-gray">CGPA: 8.0/10.0</p>
+            </div>
           </div>
           
           <div className="bg-warm-beige p-4 rounded-lg">
             <p className="text-sm italic text-dark-charcoal">
-              <strong>Career Goal:</strong> Leveraging my strong foundation in Java, Spring Boot, and system design principles 
-              to transition into a Java backend developer role, where I can contribute to building scalable and robust applications.
+              <strong>Career Goal:</strong> Leveraging my strong foundation in Java, automation testing, and backend development 
+              to transition into a Java backend developer role, contributing to scalable and robust applications.
             </p>
           </div>
         </motion.div>
