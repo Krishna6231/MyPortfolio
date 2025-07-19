@@ -23,8 +23,8 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <section id="skills" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,11 +32,11 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <hr className="border-warm-gray/30 mb-8" />
-          <h2 className="text-3xl font-bold mb-8 text-dark-charcoal">Skills & Technologies</h2>
+          <hr className="border-warm-gray/30 w-24 mx-auto mb-8" />
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-dark-charcoal">Skills & Technologies</h2>
         </motion.div>
         
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}

@@ -11,7 +11,7 @@ const TypewriterText = ({ text, delay = 0 }: { text: string; delay?: number }) =
         setDisplayText(text.slice(0, currentIndex + 1));
         setCurrentIndex(currentIndex + 1);
       }
-    }, delay + currentIndex * 100);
+    }, delay + currentIndex * 50);
 
     return () => clearTimeout(timer);
   }, [currentIndex, text, delay]);
@@ -49,25 +49,25 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="hero" className="my-20 pt-40 pb-32 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-8"
+          className="mb-12"
         >
           <p className="text-sm text-warm-gray mb-4">
             Based in Hyderabad → <span className="ml-2">{currentTime}</span>
           </p>
-          <hr className="border-warm-gray/30 mb-12" />
+          <hr className="border-warm-gray/30 w-24 mx-auto mb-12" />
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold mb-16 leading-tight text-dark-charcoal"
+          className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-dark-charcoal"
         >
           Hi, this is Krishna.
         </motion.h1>
@@ -75,36 +75,16 @@ export default function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="space-y-6 text-lg mb-12"
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="space-y-4 text-lg mb-8"
         >
           <p className="text-dark-charcoal">
             Currently <strong>→ Associate Test Engineer @</strong>{" "}
             <span className="font-medium">TechCorp</span>
           </p>
           <div className="text-warm-gray text-xl">
-            <TypewriterText text="Java Developer and Startup Enthusiast" delay={1200} />
+            <TypewriterText text="Java Developer and Startup Enthusiast" delay={800} />
           </div>
-          <p className="text-dark-charcoal">
-            Delivering <strong>→ Quality Code ✨</strong>
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.0 }}
-          className="space-y-3 text-base"
-        >
-          <p className="text-warm-gray">
-            <span className="text-dark-charcoal font-medium">Building</span> → REST APIs, Microservices, Automation Frameworks
-          </p>
-          <p className="text-warm-gray">
-            <span className="text-dark-charcoal font-medium">Learning</span> → Full-Stack Development, System Design, DevOps
-          </p>
-          <p className="text-warm-gray">
-            <span className="text-dark-charcoal font-medium">Passionate about</span> → Clean Code, Agile Development, Innovation
-          </p>
         </motion.div>
       </div>
     </section>
