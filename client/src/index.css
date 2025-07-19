@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(36, 33%, 95%);
+  --foreground: hsl(0, 0%, 18%);
+  --muted: hsl(36, 20%, 92%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(36, 20%, 85%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(36, 20%, 92%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(36, 20%, 92%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  --warm-beige: hsl(36, 33%, 95%);
+  --warm-gray: hsl(25, 20%, 50%);
+  --dark-charcoal: hsl(0, 0%, 18%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --warm-beige: hsl(240, 10%, 3.9%);
+  --warm-gray: hsl(240, 5%, 64.9%);
+  --dark-charcoal: hsl(0, 0%, 98%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: hsl(var(--warm-beige));
+    color: hsl(var(--dark-charcoal));
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .warm-beige {
+    background-color: hsl(var(--warm-beige));
+  }
+
+  .warm-gray {
+    color: hsl(var(--warm-gray));
+  }
+
+  .dark-charcoal {
+    color: hsl(var(--dark-charcoal));
+  }
+}
+
+@layer utilities {
+  .text-warm-gray {
+    color: hsl(var(--warm-gray));
+  }
+
+  .bg-warm-beige {
+    background-color: hsl(var(--warm-beige));
+  }
+
+  .text-dark-charcoal {
+    color: hsl(var(--dark-charcoal));
+  }
+
+  .border-warm-gray {
+    border-color: hsl(var(--warm-gray));
+  }
+}
