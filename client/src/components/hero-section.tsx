@@ -19,7 +19,7 @@ const TypewriterText = ({
           setCurrentIndex(currentIndex + 1);
         }
       },
-      delay + currentIndex * 50,
+      delay + currentIndex * 1,
     );
 
     return () => clearTimeout(timer);
@@ -96,7 +96,7 @@ export default function HeroSection() {
             <span className="font-medium">TechCorp</span>
           </p>
           <div className="text-warm-gray text-xl">
-            <TypewriterText text="Java Developer and Startup Enthusiast" />
+            <TypewriterText text="Java Developer and Startup Enthusiast" delay={0} />
           </div>
         </motion.div>
       </div>
