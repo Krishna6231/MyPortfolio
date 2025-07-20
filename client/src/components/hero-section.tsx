@@ -93,10 +93,10 @@ export default function HeroSection() {
         >
           <p className="text-dark-charcoal">
             Currently <strong>→ Associate Test Engineer @</strong>{" "}
-            <span className="font-medium">TechCorp</span>
+            <span className="font-medium">Coforge</span>
           </p>
           <div className="text-warm-gray text-xl">
-            <TypewriterText text="Java Developer and Startup Enthusiast" delay={0} />
+            <TypewriterText text="Java Developer and Startup Enthusiast" />
           </div>
         </motion.div>
       </div>

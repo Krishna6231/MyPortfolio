@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 
 export default function ContactSection() {
   const contactLinks = [
-    { label: "LinkedIn", url: "https://linkedin.com/in/krishna" },
-    { label: "GitHub", url: "https://github.com/krishna" },
-    { label: "Email", url: "mailto:krishna@email.com" },
-    { label: "Resume", url: "#" }
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/krishna-modi-a53050256/" },
+    { label: "GitHub", url: "https://github.com/Krishna6231" },
+    { label: "Email", url: "mailto:krishnamodi.1524@gmail.com" },
+    { label: "Resume", url: "https://drive.google.com/file/d/1aA0aOfLRIp3ayuZaZS-LwmZgnnF0t3w_/view?usp=sharing" }
   ];
 
   return (
@@ -58,7 +58,7 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="mt-12 pt-8 border-t border-warm-gray/30 text-sm text-warm-gray"
         >
-          <p>© Krishna 2024 • Updated 12/24</p>
+          <p>© Krishna 2025 • Updated 07/25</p>
         </motion.div>
       </div>
     </section>
